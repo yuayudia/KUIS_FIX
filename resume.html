@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="ayudia.png" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">Ayudia Yuningsih</p>
+				<span><i class="fas fa-map-marker-alt"></i> Lombok, Indonesia</span>
+				<br><span><i class="fas fa-user"></i> Mahasiswi</span>
+            </div>
+           
+        </div>  
+      <hr>
+       <div class="skills">
+	       <div class="title">
+	          Skills
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <img src="html.png" width="20px" height="22px">
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+				<img src="css.png" width="20px" height="22px">
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item java">
+				<img src="java.png" width="20px" height="22px">
+	             <div class="text">Java</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item illustrator">
+				<img src="ai.png" width="20px" height="22px">
+	             <div class="text">Illustrator</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item as">
+				<img src="as.png" width="20px" height="22px">
+	             <div class="text">Android Studio</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item ms">
+				<img src="msoff.png" width="20px" height="22px">
+	             <div class="text">Ms.Office</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experience</li>
+                    <li data-li="education">Education</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">EXPERIENCE</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2017
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Magang - STTH Pancor
+									</div>
+									<div class="data">
+										Mengelola perangkat-perangkat networking, melakukan monitoring dan membuat web server
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2017
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Android Developer (Beginner) - Google 
+									</div>
+									<div class="data">
+										Membuat aplikasi berbasis android 
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2018
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Mobile Web Specialist - Google 
+									</div>
+									<div class="data">
+										Membuat aplikasi mobile berbasis web 
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">EDUCATION</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2018 - Present
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Universitas Bumigora Mataram
+									</div>
+									<div class="data">
+										Ilmu Komputer (Kompetensi Rekayasa Perangkat Lunak) 
+									</div>
+								</div>
+							</li>
+							<li>
+                    			<div class="sub_title">
+                    				2015 - 2018
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										SMK Negeri 1 Selong
+									</div>
+									<div class="data">
+										Teknik Komputer dan Jaringan 
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2012 - 2015 	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										MTs NW Pancor
+									</div>
+								</div>
+							</li>
+							<li>
+                    			<div class="sub_title">
+                    				2006 - 2012	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										SD Negeri 1 Surabaya
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">ayudia078@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Phone</span>
+                  			<span class="info_a">+6282359036709</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Facebook</span>
+                  			<span class="info_a">Ayudia Yuningsih</span>
+                  		</li>
+                  		
+                  		<li>
+                  			<span class="info_q">Instagram</span>
+                  			<span class="info_a">@yuayudia_</span>
+                  		</li>
+                  		
+                  	</ul>
+                  </div>
+                </div>  
+            </div> 
+        </div>
+     
+   </div>
+</div>
+
+</body>
+</html>
